@@ -1043,6 +1043,8 @@ body::after {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  max-width: 56.25rem;
+  margin: 0 auto;
 }
 
 .interface__cols::before,
