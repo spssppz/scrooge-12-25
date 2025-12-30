@@ -857,6 +857,11 @@ body::after {
   margin-bottom: 1.25rem;
 }
 
+.slide-hero__image {
+  position: relative;
+  z-index: 2;
+}
+
 .slide-hero__image img {
   width: 100%;
   height: auto;
@@ -1075,6 +1080,8 @@ body::after {
 
 .interface-item {
   max-width: 22.25rem;
+  position: relative;
+  z-index: 2;
 }
 
 .interface-item:nth-child(even) {
