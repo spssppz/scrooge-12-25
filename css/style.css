@@ -487,6 +487,9 @@ body::after {
   background: #101010;
 }
 
+.no-webp .footer::after {
+  background: url("../img/bgs/footer.png") 50%/cover no-repeat; }
+
 .footer::after {
   content: "";
   position: absolute;
@@ -1048,6 +1051,8 @@ body::after {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  max-width: 65rem;
+  margin: 0 auto;
 }
 
 .interface__cols::before,
@@ -2362,6 +2367,8 @@ body::after {
     aspect-ratio: 259/126;
   }
 }
+
+.webp .footer::after { background: url(../img/bgs/footer.webp) 50%/cover no-repeat; }
 
 .webp .slide-hero_3 { background: url(../img/hero/bg-3.webp) 50%/cover no-repeat; }
 
