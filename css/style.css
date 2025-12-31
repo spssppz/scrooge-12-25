@@ -1048,8 +1048,6 @@ body::after {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  max-width: 56.25rem;
-  margin: 0 auto;
 }
 
 .interface__cols::before,
@@ -1079,7 +1077,7 @@ body::after {
 }
 
 .interface-item {
-  max-width: 22.25rem;
+  max-width: 30.5rem;
   position: relative;
   z-index: 2;
 }
@@ -1090,7 +1088,7 @@ body::after {
 }
 
 .interface-item:nth-child(2) {
-  max-width: 21.5625rem;
+  max-width: 27.5rem;
 }
 
 .interface-item__cap {
@@ -1099,6 +1097,8 @@ body::after {
   font-weight: 500;
   padding: 0rem 1.25rem;
   line-height: 1.5;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 .interface-item__cap:not(:last-child) {
@@ -1197,13 +1197,7 @@ body::after {
   aspect-ratio: 259/58;
 }
 
-.solution__wrapper {
-  min-height: 15.9375rem;
-  backdrop-filter: blur(80px);
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.solution__wrapper::after {
+.solution::after {
   content: "Step " counter(num);
   position: absolute;
   top: 0;
@@ -1217,6 +1211,29 @@ body::after {
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.5;
+}
+
+.solution__wrapper {
+  min-height: 15.9375rem;
+  backdrop-filter: blur(80px);
+  background: rgba(255, 255, 255, 0.03);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  text-align: center;
+  padding: 2.1875rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .solution__icon {
@@ -1612,6 +1629,12 @@ body::after {
   }
 }
 
+@media (min-width: 74.99875em) {
+  .interface-item:not(:first-child) {
+    margin-top: -7.5rem;
+  }
+}
+
 @media (max-width: 1279px) {
   .footer__wrapper {
     -ms-flex-wrap: wrap;
@@ -1919,12 +1942,12 @@ body::after {
     grid-template-columns: 1fr 1fr;
   }
 
-  .solution__wrapper {
-    min-height: 13.125rem;
+  .solution::after {
+    font-size: 1rem;
   }
 
-  .solution__wrapper::after {
-    font-size: 1rem;
+  .solution__wrapper {
+    min-height: 13.125rem;
   }
 
   .solution__icon {
@@ -2131,12 +2154,12 @@ body::after {
     aspect-ratio: 400/40;
   }
 
-  .solution__wrapper {
-    min-height: 11.1875rem;
+  .solution::after {
+    font-size: 0.875rem;
   }
 
-  .solution__wrapper::after {
-    font-size: 0.875rem;
+  .solution__wrapper {
+    min-height: 11.1875rem;
   }
 
   .solution__cap {
