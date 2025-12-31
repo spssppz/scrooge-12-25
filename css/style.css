@@ -1192,27 +1192,12 @@ body::after {
   border-radius: 50%;
   background: #81bd52;
   z-index: -1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   aspect-ratio: 259/58;
 }
 
 .solution__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  padding: 1.25rem 2rem;
-  border: 0.0625rem solid rgba(129, 189, 82, 0.15);
-  border-radius: 1.25rem;
   min-height: 15.9375rem;
   backdrop-filter: blur(80px);
   background: rgba(255, 255, 255, 0.03);
@@ -2348,6 +2333,10 @@ body::after {
 
   .hero__pagination .swiper-pagination-bullet:hover {
     background: #83ef41;
+  }
+
+  .solution:hover::before {
+    aspect-ratio: 259/126;
   }
 }
 
