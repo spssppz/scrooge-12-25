@@ -1304,33 +1304,6 @@ body::after {
   padding: 1rem;
 }
 
-.models__image {
-  backdrop-filter: blur(200px);
-  background: rgba(255, 255, 255, 0.03);
-  border: 0.0625rem solid #6fbe3e;
-  border-radius: 1.5625rem;
-  padding: 2.5rem 6.25rem 1.5rem;
-  position: relative;
-}
-
-.models__image::after {
-  content: "";
-  position: absolute;
-  top: 26%;
-  bottom: 26%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  width: 65%;
-  border-radius: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6fbe3e), to(rgba(111, 190, 62, 0)));
-  background: linear-gradient(180deg, #6fbe3e 0%, rgba(111, 190, 62, 0) 100%);
-  -webkit-filter: blur(250px);
-          filter: blur(250px);
-  z-index: -1;
-}
-
 .models__image img {
   width: 100%;
   height: auto;
@@ -1560,7 +1533,7 @@ body::after {
   }
 
   .slide-hero__image_2 {
-    width: 38.6875rem;
+    width: 55rem;
   }
 
   .hero-cols {
@@ -1611,6 +1584,23 @@ body::after {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .slide-hero__body_1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1.875rem;
+    text-align: left;
+  }
+
+  .slide-hero__body_1 .slide-hero__title {
+    text-align: left;
+  }
+
+  .slide-hero__body_1 .slide-hero__descr {
+    text-align: left;
   }
 
   .hero-solutions__wrapper {
@@ -1876,6 +1866,11 @@ body::after {
 
   .slide-hero {
     padding: 5rem 0rem 3.125rem;
+    overflow: hidden;
+  }
+
+  .slide-hero__left {
+    margin-bottom: 1.25rem;
   }
 
   .slide-hero__decor_2 {
@@ -1973,10 +1968,6 @@ body::after {
 
   .models__col {
     font-size: 1.25rem;
-  }
-
-  .models__image {
-    padding: 2rem;
   }
 
   .models__image:not(:last-child) {
@@ -2191,11 +2182,6 @@ body::after {
     border-radius: 0.5rem;
     font-size: 1rem;
     padding: 0.625rem;
-  }
-
-  .models__image {
-    padding: 1.25rem;
-    border-radius: 0.9375rem;
   }
 
   .offer__title:not(:last-child) {
