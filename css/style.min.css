@@ -1227,8 +1227,8 @@ body::after {
 
 .solution__wrapper {
 	min-height: 15.9375rem;
-	backdrop-filter: blur(80px);
 	-webkit-backdrop-filter: blur(80px);
+	backdrop-filter: blur(80px);
 	background: rgba(255, 255, 255, .03);
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -2266,6 +2266,17 @@ body::after {
 
 	.hero-cols__descr {
 		font-size: .875rem
+	}
+
+	.hero-solution {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		width: auto
+	}
+
+	.hero-solution:not(:last-child) {
+		margin-right: 1.875rem
 	}
 
 	.solutions__descr {

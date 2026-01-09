@@ -2259,6 +2259,17 @@ body::after {
     font-size: 0.875rem;
   }
 
+  .hero-solution {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    width: auto;
+  }
+
+  .hero-solution:not(:last-child) {
+    margin-right: 1.875rem;
+  }
+
   .solutions__descr {
     font-size: 0.875rem;
   }
