@@ -1595,6 +1595,10 @@ body::after {
     text-align: left;
   }
 
+  .slide-hero__body_1 .slide-hero__btnrapper {
+    text-align: left;
+  }
+
   .slide-hero__body_1 .slide-hero__title {
     text-align: left;
   }
@@ -1625,6 +1629,10 @@ body::after {
 }
 
 @media (min-width: 74.99875em) {
+  .slide-hero__image_1 {
+    width: 39.375rem;
+  }
+
   .interface-item:not(:first-child) {
     margin-top: -7.5rem;
   }
